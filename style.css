@@ -12,7 +12,7 @@ body {
     background-color:var(--bkg-color);
     font-family: 'Goldman', sans-serif;
     max-width: 60rem;
-    margin: 0 auto;
+    margin: 0 auto; 
     padding: 1rem;
 }
 
