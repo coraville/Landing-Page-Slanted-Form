@@ -1,10 +1,15 @@
+:root{
+    --the-color: #45d6b7;
+    --bkg-color: rgb(70, 70, 70);
+}
+
 * {
     box-sizing: border-box;
 }
 
 body {
-    color: rgb(219, 181, 125);
-    background-color: rgb(17, 17, 17);
+    color: var(--the-color);
+    background-color:var(--bkg-color);
     font-family: 'Goldman', sans-serif;
     max-width: 60rem;
     margin: 0 auto;
@@ -17,19 +22,21 @@ h1, .details, footer {
 
 /* ============ HEADER ============ */
 header {
-    display: flex;
-    padding-bottom: 1.5rem;
+    /* display: flex; */
+    padding: 4rem 0 ;
+    margin: 0 auto;
 }
 
-.logo {
+/* .logo {
     width: 20%;
     height: auto;
     object-fit: cover;
     overflow: visible;
-}
+} */
+
 h1 {
     align-self: center;
-    font-size: 1.7em;
+    font-size: 2rem;
 }
 
 h2 {
@@ -43,7 +50,7 @@ img {
 /* ============ FORM SECTION ============ */
 .skewbox {
     transform: skewX(150deg);
-    border: rgb(219, 181, 125) 2px solid;
+    border: var(--the-color) 2px solid;
     background-color: rgb(255, 255, 255);
 }
 .section-form {
@@ -164,12 +171,12 @@ img {
 /* CONFIRM AREA */
 .iconfirm {
     grid-area: confirm;
-    background-color: rgb(17, 17, 17);
+    background-color:var(--bkg-color);
     border-width: 4px;
 }
 
 .btn {
-    color: rgb(219, 181, 125);
+    color: var(--the-color);
     text-transform: uppercase;
     padding: 0 5px;
     font-size: 1rem;
@@ -194,7 +201,7 @@ label {
 }
 
 .line {
-    border-top: rgb(219, 181, 125) 2px solid;
+    border-top: var(--the-color) 2px solid;
     z-index: 10;
 }
 
